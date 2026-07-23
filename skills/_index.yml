@@ -1,0 +1,14 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.aztec.network/developers/ai_tooling
+notes: >-
+  Aztec is an SDK / smart-contract framework, not an OpenAPI-described REST API, so
+  skills are grounded in the provider's own published AI-tooling guidance rather than
+  generated from operationIds. The primary skill is Aztec's recommended CLAUDE.md/AGENTS.md
+  project-instruction file, saved verbatim.
+skills:
+- file: aztec-project-instructions.md
+  name: Aztec project instructions (CLAUDE.md / AGENTS.md)
+  api: none
+  method: searched
+  operations: []

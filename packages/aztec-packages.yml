@@ -1,0 +1,81 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/org/aztec
+notes: >-
+  First-party Aztec developer SDK published under the @aztec npm scope from the
+  AztecProtocol/aztec-packages monorepo. Aztec.js is the primary client library
+  for managing accounts and interacting with contracts on the Aztec network.
+  Versions verified against the npm registry (aztec.js 5.0.1, 2026-07-15).
+packages:
+- language: javascript
+  registry: npm
+  name: "@aztec/aztec.js"
+  url: https://www.npmjs.com/package/@aztec/aztec.js
+  install: npm install @aztec/aztec.js
+  version: 5.0.1
+  official: true
+  description: Library that provides APIs for managing accounts and interacting with contracts on the Aztec network.
+- language: javascript
+  registry: npm
+  name: "@aztec/accounts"
+  url: https://www.npmjs.com/package/@aztec/accounts
+  install: npm install @aztec/accounts
+  version: 5.0.1
+  official: true
+  description: Implementation of sample account contracts for the Aztec network.
+- language: javascript
+  registry: npm
+  name: "@aztec/aztec"
+  url: https://www.npmjs.com/package/@aztec/aztec
+  install: npm install @aztec/aztec
+  version: 5.0.1
+  official: true
+  description: Package that provides a simple development environment for Aztec.
+- language: javascript
+  registry: npm
+  name: "@aztec/pxe"
+  url: https://www.npmjs.com/package/@aztec/pxe
+  install: npm install @aztec/pxe
+  version: 5.0.1
+  official: true
+  description: PXE (Private eXecution Environment) server-side software that manages private state and proving.
+- language: javascript
+  registry: npm
+  name: "@aztec/bb.js"
+  url: https://www.npmjs.com/package/@aztec/bb.js
+  install: npm install @aztec/bb.js
+  version: 5.0.1
+  official: true
+  description: Prover/verifier library for Barretenberg.
+- language: javascript
+  registry: npm
+  name: "@aztec/ethereum"
+  url: https://www.npmjs.com/package/@aztec/ethereum
+  install: npm install @aztec/ethereum
+  version: 5.0.1
+  official: true
+  description: Configuration and code for common chain interactions between Aztec and Ethereum L1.
+- language: javascript
+  registry: npm
+  name: "@aztec/foundation"
+  url: https://www.npmjs.com/package/@aztec/foundation
+  install: npm install @aztec/foundation
+  version: 5.0.1
+  official: true
+  description: Shared foundational utilities for the Aztec packages.
+- language: javascript
+  registry: npm
+  name: "@aztec/stdlib"
+  url: https://www.npmjs.com/package/@aztec/stdlib
+  install: npm install @aztec/stdlib
+  version: 5.0.1
+  official: true
+  description: JavaScript types and helper functions for the Aztec circuits.
+- language: javascript
+  registry: npm
+  name: "@aztec/circuits.js"
+  url: https://www.npmjs.com/package/@aztec/circuits.js
+  install: npm install @aztec/circuits.js
+  version: 0.76.4
+  official: true
+  description: JavaScript types and helper functions for the Aztec circuits.

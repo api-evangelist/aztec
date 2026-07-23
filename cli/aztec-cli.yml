@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.aztec.network/developers/docs/cli/aztec_cli_reference
+notes: >-
+  The `aztec` CLI is the first-party toolchain for Aztec smart-contract and network
+  development. It wraps the bundled Noir compiler (exposed as `aztec-nargo`) and the
+  Barretenberg prover so that `aztec compile`/`aztec test` produce complete artifacts
+  (contract development should use the aztec wrappers rather than `nargo`/`bb` directly).
+  Installed via the aztec-up installer; the binary itself is distributed as the @aztec
+  toolchain (see packages/).
+install:
+- method: installer
+  command: "bash -i <(curl -sL https://install.aztec.network)"
+- method: version-manager
+  command: aztec-up
+  subcommands:
+  - aztec-up install <version>
+  - aztec-up use <version>
+  - aztec-up list
+reference: https://docs.aztec.network/developers/docs/cli/aztec_cli_reference
+command_groups:
+- group: project
+  commands: [new, init, compile, test, codegen, update, example-contracts, inspect-contract, profile]
+- group: profiling
+  commands: [profile flamegraph, profile gates]
+- group: network
+  commands: [start, block-number, get-block, get-node-info, get-logs, sequencers, prover]
+- group: l1
+  commands: [deploy-l1-contracts, deploy-new-rollup, bridge-erc20, get-l1-addresses, get-l1-balance, add-l1-validator, remove-l1-validator, generate-l1-account]
+- group: governance
+  commands: [deposit-governance-tokens, execute-governance-proposal, propose-with-lock, advance-epoch, fast-forward-epochs]
+- group: keys
+  commands: [generate-keys, generate-bls-keypair, generate-p2p-private-key, generate-secret-and-hash, generate-bootnode-enr]
+key_flows:
+- "Scaffold a project: aztec new / aztec init"
+- "Compile contracts (produces complete artifacts incl. AVM transpilation): aztec compile"
+- "Test contracts against a local network: aztec test"
+- "Run a local sandbox / node: aztec start"
+- "Generate TypeScript bindings from compiled artifacts: aztec codegen"

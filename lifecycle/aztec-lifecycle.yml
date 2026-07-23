@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.aztec.network/networks
+notes: >-
+  Aztec versions the protocol + SDK together on a single semver stream (current 5.0.1).
+  The Networks page documents which version each network (Alpha/Mainnet, Testnet) runs,
+  and the developer SDK/aztec-nr version may differ from the node version operators run.
+  The predecessor product, Aztec Connect, has been formally sunset with published
+  withdrawal instructions and self-host guidance.
+versioning:
+  scheme: semver
+  current: 5.0.1
+  networks_docs: https://docs.aztec.network/networks
+  networks:
+  - name: Alpha (Mainnet)
+    docs: https://docs.aztec.network/networks
+  - name: Testnet
+    docs: https://docs.aztec.network/networks
+deprecation:
+  policy_url: https://docs.aztec.network/aztec_connect_sunset
+  detail: >-
+    Aztec Connect (the prior rollup product) has been deprecated ("Aztec Connect Sunset").
+    The page provides withdrawal instructions and guidance for running your own instance
+    of the rollup infrastructure.
+status_page: null
+sla: null

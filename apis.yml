@@ -1,8 +1,13 @@
 aid: aztec
 name: Aztec
-description: Aztec is a company surfaced as a portfolio company of a16z, paradigm, sv-angel and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Aztec is the leading privacy-first Layer 2 zkRollup on Ethereum, enabling developers to
+  build private smart contracts with fully programmable end-to-end privacy. Developers write
+  contracts in Noir using the Aztec.nr framework, interact with the network through the
+  Aztec.js TypeScript SDK and the Private eXecution Environment (PXE), and use the first-party
+  `aztec` CLI to compile, test, prove, and deploy. Aztec ships an official MCP server and
+  recommended CLAUDE.md/AGENTS.md instructions for AI-assisted development. Backed by a16z,
+  Paradigm, and SV Angel.
 url: https://raw.githubusercontent.com/api-evangelist/aztec/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +17,32 @@ x-backed-by:
 - sv-angel
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://cdn.prod.website-files.com/6847005bc403085c1aa846e0/689cacb514469cdab7b6c2cf_Aztec-cover.png
 tags:
 - Company
+- Blockchain
+- Privacy
+- Zero-Knowledge
+- Ethereum
+- Layer 2
+- Smart Contracts
+- Cryptography
+- Developer Tools
+- Web3
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +52,42 @@ maintainers:
 common:
 - type: Website
   url: https://aztec.network
+- type: DeveloperPortal
+  url: https://docs.aztec.network
+- type: Documentation
+  url: https://docs.aztec.network
+- type: APIReference
+  url: https://docs.aztec.network/developers/docs/aztec-js/typescript_api_reference
+- type: GettingStarted
+  url: https://docs.aztec.network/developers/getting_started
+- type: GitHubOrganization
+  url: https://github.com/AztecProtocol
+- type: Blog
+  url: https://aztec.network/blog
+- type: PrivacyPolicy
+  url: https://aztec.network/privacy
+- type: LLMsTxt
+  url: llms/aztec-llms.txt
+- type: Packages
+  url: packages/aztec-packages.yml
+- type: SDKs
+  url: packages/aztec-packages.yml
+- type: CLI
+  url: cli/aztec-cli.yml
+- type: MCPServer
+  url: mcp/aztec-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: ChangeLog
+  url: changelog/aztec-changelog.yml
+- type: Lifecycle
+  url: lifecycle/aztec-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/aztec-lifecycle.yml
+- type: DomainSecurity
+  url: security/aztec-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

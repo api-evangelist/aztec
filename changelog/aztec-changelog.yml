@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/AztecProtocol/aztec-packages/releases
+scheme: semver
+current_version: 5.0.1
+notes: >-
+  Aztec ships the monorepo (protocol, SDK, and toolchain) under a single semver stream
+  from AztecProtocol/aztec-packages GitHub releases. Recent window captured from the
+  releases API; the live GitHub releases page is the source of truth for full history.
+entries:
+- version: v5.0.1
+  date: '2026-07-15'
+  breaking: false
+  highlights: Patch release on the 5.0 line.
+- version: v5.0.0
+  date: '2026-07-13'
+  breaking: true
+  highlights: Major 5.0 release of the Aztec packages (protocol, SDK, and toolchain).
+- version: v5.0.0-rc.2
+  date: '2026-06-29'
+  breaking: false
+  highlights: Testnet release candidate for 5.0.
+- version: v4.4.0
+  date: '2026-06-27'
+  breaking: false
+  highlights: Additive release on the 4.x line.

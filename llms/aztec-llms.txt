@@ -1,0 +1,266 @@
+# Aztec Protocol Documentation
+
+> Build private smart contracts on Ethereum's leading privacy-first L2 zkRollup.
+
+For the complete documentation as a single file, see [llms-full.txt](https://docs.aztec.network/llms-full.txt).
+
+**Setting up an AI agent?** Read the [AI Tooling guide](https://docs.aztec.network/developers/ai_tooling) first for recommended CLAUDE.md/AGENTS.md instructions and common-mistake guidance (use the `aztec` CLI, not `nargo` or `bb` directly).
+
+- [Aztec Protocol Documentation](/index.md)
+
+## developers
+
+- [AI Tooling](/developers/ai_tooling.md): Set up AI coding tools like Claude Code, Cursor, and Codex for Aztec and Noir development.
+- [Aztec.js](/developers/docs/aztec-js.md): Complete guide to Aztec.js library for managing accounts and interacting with contracts on the Aztec network, including installation, importing, and core workflow functions.
+- [Reference](/developers/docs/aztec-js/aztec_js_reference.md): Comprehensive auto-generated reference for the Aztec.js TypeScript library with all classes, interfaces, types, and functions.
+- [Connect to Local Network](/developers/docs/aztec-js/how_to_connect_to_local_network.md): Connect your application to the Aztec local network and interact with accounts.
+- [Creating Accounts](/developers/docs/aztec-js/how_to_create_account.md): Step-by-step guide to creating and deploying new user accounts in Aztec.js applications.
+- [Deploying Contracts](/developers/docs/aztec-js/how_to_deploy_contract.md): Deploy smart contracts to Aztec using generated TypeScript classes.
+- [Paying Fees](/developers/docs/aztec-js/how_to_pay_fees.md): Pay transaction fees on Aztec, understand mana costs, estimate gas, and retrieve fees from receipts.
+- [Reading Contract Data](/developers/docs/aztec-js/how_to_read_data.md): How to read data from contracts including simulating functions, reading logs, and retrieving events.
+- [Sending Transactions](/developers/docs/aztec-js/how_to_send_transaction.md): Send transactions to Aztec contracts using Aztec.js with various options and error handling
+- [Simulate without signing prompts](/developers/docs/aztec-js/how_to_simulate_without_signing.md): How to call .simulate() on a view function or estimate gas without prompting the user to sign authentication witnesses.
+- [Testing Smart Contracts](/developers/docs/aztec-js/how_to_test.md): Learn how to write and run tests for your Aztec smart contracts using Aztec.js and a local network.
+- [Using Authentication Witnesses](/developers/docs/aztec-js/how_to_use_authwit.md): Step-by-step guide to implementing authentication witnesses in Aztec.js for delegated transactions.
+- [Pay Fees Privately](/developers/docs/aztec-js/how_to_use_private_fee_juice.md): Learn how private fee payment works on Aztec and walk through an example using a community-built fully private Fee Payment Contract.
+- [TypeScript API Reference](/developers/docs/aztec-js/typescript_api_reference.md): API reference documentation for Aztec TypeScript packages including aztec.js, accounts, PXE, and core libraries.
+- [Overview](/developers/docs/aztec-nr.md): Comprehensive guide to writing smart contracts for the Aztec network using Noir.
+- [Aztec.nr API Reference](/developers/docs/aztec-nr/api.md): Auto-generated API reference documentation for the Aztec.nr smart contract framework.
+- [Compiling Contracts](/developers/docs/aztec-nr/compiling_contracts.md): Compile your Aztec smart contracts into deployable artifacts using aztec command.
+- [Contract Deployment Reference](/developers/docs/aztec-nr/contract_readiness_states.md): A practical guide to determine which deployment steps your Aztec contract needs and when functions become callable.
+- [Debugging Aztec Code](/developers/docs/aztec-nr/debugging.md): This guide shows you how to debug issues in your Aztec contracts.
+- [Profiling Transactions](/developers/docs/aztec-nr/framework-description/advanced/how_to_profile_transactions.md): How to profile Aztec transactions and identify performance bottlenecks using aztec profile, aztec-wallet, and aztec.js.
+- [Proving historic state](/developers/docs/aztec-nr/framework-description/advanced/how_to_prove_history.md): Prove historical notes, nullifiers, contract deployment, and public storage in your Aztec smart contracts.
+- [Retrieving and Filtering Notes](/developers/docs/aztec-nr/framework-description/advanced/how_to_retrieve_filter_notes.md): Step-by-step guide to retrieving, filtering, and sorting notes from private storage in Aztec contracts.
+- [Using Capsules](/developers/docs/aztec-nr/framework-description/advanced/how_to_use_capsules.md): Learn how to use capsules for per-contract non-volatile storage in the PXE.
+- [Partial notes](/developers/docs/aztec-nr/framework-description/advanced/partial_notes.md): How partial notes work, how they are completed, and how they enable use cases like AMM swaps and payment endpoints.
+- [Partial notes as payment endpoints](/developers/docs/aztec-nr/framework-description/advanced/partial_notes_as_payment_endpoints.md): Using partial notes as a recipient's offer to be paid, enabling naming-service style flows with no recipient action at payment time.
+- [Oracle Functions](/developers/docs/aztec-nr/framework-description/advanced/protocol_oracles.md): Learn about oracles in Aztec, which provide external data to smart contracts during execution.
+- [Writing Efficient Contracts](/developers/docs/aztec-nr/framework-description/advanced/writing_efficient_contracts.md): Best practices and techniques for writing gas-efficient contracts on Aztec, optimizing for both proving and execution costs.
+- [Authentication Witnesses](/developers/docs/aztec-nr/framework-description/authentication_witnesses.md): Enable contracts to execute actions on behalf of user accounts using authentication witnesses.
+- [Calling Other Contracts](/developers/docs/aztec-nr/framework-description/calling_contracts.md): Call functions in other contracts from your Aztec smart contracts to enable composability.
+- [Contract Artifacts](/developers/docs/aztec-nr/framework-description/contract_artifact.md): Understand the structure and contents of Aztec smart contract artifacts.
+- [Contract Structure](/developers/docs/aztec-nr/framework-description/contract_structure.md): Learn the fundamental structure of Aztec smart contracts including the contract keyword, directory layout, and how contracts manage state and functions.
+- [Contract Upgrades](/developers/docs/aztec-nr/framework-description/contract_upgrades.md): Understand contract upgrade patterns in Aztec and how to implement upgradeable contracts.
+- [Custom notes](/developers/docs/aztec-nr/framework-description/custom_notes.md): Learn how to create and use custom note types for specialized private data storage in Aztec contracts
+- [Data Packing and Serialization](/developers/docs/aztec-nr/framework-description/data_packing.md): Understand Serialize, Deserialize, and Packable traits, when each is used, how to write custom packing, and the cost implications.
+- [Aztec.nr Dependencies](/developers/docs/aztec-nr/framework-description/dependencies.md): Reference list of available Aztec.nr libraries and their Nargo.toml dependency paths.
+- [Ethereum<>Aztec Messaging](/developers/docs/aztec-nr/framework-description/ethereum_aztec_messaging.md): Send messages and data between L1 and L2 contracts using portal contracts and cross-chain messaging.
+- [Events and Logs](/developers/docs/aztec-nr/framework-description/events_and_logs.md): Learn how to emit events from your Aztec smart contracts for offchain applications to consume.
+- [Defining Functions](/developers/docs/aztec-nr/framework-description/functions.md): Overview of Aztec contract functions, including private, public, and utility function types.
+- [Attributes and Macros](/developers/docs/aztec-nr/framework-description/functions/attributes.md): Reference for Aztec contract attributes that control function visibility, execution context, storage, and notes.
+- [Understanding Function Context](/developers/docs/aztec-nr/framework-description/functions/context.md): Learn about the execution context available to Aztec contract functions, including caller information and block data.
+- [Inner Workings of Functions](/developers/docs/aztec-nr/framework-description/functions/function_transforms.md): Understand how Aztec transforms contract functions during compilation for privacy and efficiency.
+- [How to Define Functions](/developers/docs/aztec-nr/framework-description/functions/how_to_define_functions.md): Define different types of functions in your Aztec contracts for private, public, and utility execution.
+- [Visibility](/developers/docs/aztec-nr/framework-description/functions/visibility.md): Understand function visibility modifiers in Aztec and how they affect function execution and accessibility.
+- [Global Variables](/developers/docs/aztec-nr/framework-description/globals.md): Access chain ID, block number, timestamps, and gas information in your Aztec contracts
+- [Immutables via Salt](/developers/docs/aztec-nr/framework-description/immutables.md): Commit immutable values into a contract's address salt, eliminating initialization transactions.
+- [Aztec Macros](/developers/docs/aztec-nr/framework-description/macros.md): Learn about macros available in Aztec.nr for code generation and abstraction.
+- [Note Delivery](/developers/docs/aztec-nr/framework-description/note_delivery.md): Learn how to deliver notes to recipients in Aztec smart contracts using different delivery modes to balance proving time, transaction costs, and delivery guarantees.
+- [Offchain message delivery](/developers/docs/aztec-nr/framework-description/offchain_message_delivery.md): Deliver notes and events to recipients through your own channel with offchain message delivery, avoiding data availability costs entirely.
+- [State Variables](/developers/docs/aztec-nr/framework-description/state_variables.md): Define and manage storage state in your Aztec smart contracts using various storage types.
+- [Noir VSCode Extension](/developers/docs/aztec-nr/installation.md): Learn how to install and configure the Noir Language Server for a better development experience.
+- [Logging from Contracts](/developers/docs/aztec-nr/logging.md): Add log statements to your Aztec contracts and control log verbosity in tests and local networks.
+- [Aztec Contract Standards](/developers/docs/aztec-nr/standards.md): Overview of Aztec Improvement Proposal (AIP) contract standards maintained by DeFi Wonderland.
+- [AIP-20: Fungible Token](/developers/docs/aztec-nr/standards/aip-20.md): Fungible token standard with private balances, partial-note transfers, and recursive note consumption.
+- [AIP-4626: Tokenized Vault](/developers/docs/aztec-nr/standards/aip-4626.md): Yield-bearing vault standard with share conversion across private and public contexts.
+- [AIP-721: Non-Fungible Token](/developers/docs/aztec-nr/standards/aip-721.md): Non-fungible token standard with private ownership, partial-note support, and commitment-based transfers.
+- [Dripper (Development Faucet)](/developers/docs/aztec-nr/standards/dripper.md): Convenience faucet for minting tokens into private or public balances during development.
+- [Escrow](/developers/docs/aztec-nr/standards/escrow.md): Minimal token and NFT custody contract with salt-based authorization.
+- [Generic Proxy](/developers/docs/aztec-nr/standards/generic-proxy.md): Forwarding layer for account abstraction that routes calls by argument count.
+- [Testing Contracts](/developers/docs/aztec-nr/testing_contracts.md): Write and run tests for your Aztec smart contracts using Noir's TestEnvironment.
+- [Aztec CLI Reference](/developers/docs/cli/aztec_cli_reference.md): Comprehensive auto-generated reference for the Aztec CLI with all commands and options.
+- [Aztec Up CLI Reference](/developers/docs/cli/aztec_up_cli_reference.md): Comprehensive auto-generated reference for the Aztec Version Manager with all commands and options.
+- [Aztec Wallet CLI Reference](/developers/docs/cli/aztec_wallet_cli_reference.md): Comprehensive auto-generated reference for the Aztec Wallet CLI with all commands and options.
+- [Aztec Overview](/developers/docs/foundational-topics.md): Overview of Aztec, a privacy-first Layer 2 on Ethereum supporting smart contracts with private and public state and execution.
+- [Understanding Accounts in Aztec](/developers/docs/foundational-topics/accounts.md): Deep dive into Aztec's native account abstraction system - understanding how smart contract accounts work, their architecture, key management, and authorization mechanisms in a privacy-preserving blockchain.
+- [Account Deployment](/developers/docs/foundational-topics/accounts/deployment.md): How Aztec accounts come into existence, from the standard initializer plus deployment flow to initializerless accounts that need no onchain transaction at all.
+- [Keys](/developers/docs/foundational-topics/accounts/keys.md): Understand the specialized key pairs used in Aztec accounts - nullifier keys, incoming viewing keys, and signing keys - and how they enable privacy, security, and flexible authentication.
+- [Authentication Witness (Authwit)](/developers/docs/foundational-topics/advanced/authwit.md): Learn about Aztec's Authentication Witness scheme that enables secure third-party actions on behalf of users, providing a privacy-preserving alternative to traditional token approvals.
+- [Circuits](/developers/docs/foundational-topics/advanced/circuits.md): Explore Aztec's core protocol circuits that enforce privacy rules and transaction validity through zero-knowledge proofs, enabling private state and function execution.
+- [AVM Cryptographic Compatibility](/developers/docs/foundational-topics/advanced/circuits/avm_compatibility.md): Which Noir cryptographic primitives work in public (AVM) functions vs private, and workarounds for unsupported operations.
+- [Private Kernel Circuit](/developers/docs/foundational-topics/advanced/circuits/private_kernel.md): Learn about the Private Kernel Circuit, the only zero-knowledge circuit in Aztec that handles private data and ensures transaction privacy by executing on user devices.
+- [Public Execution (AVM)](/developers/docs/foundational-topics/advanced/circuits/public_execution.md): Learn how the Aztec Virtual Machine (AVM) executes public functions and manages public state transitions.
+- [Rollup Circuits](/developers/docs/foundational-topics/advanced/circuits/rollup_circuits.md): Learn how Rollup Circuits compress transactions into a single proof using a hierarchical tree topology for efficient verification on Ethereum.
+- [Indexed Merkle Tree (Nullifier Tree)](/developers/docs/foundational-topics/advanced/storage/indexed_merkle_tree.md): Learn about indexed merkle trees, an efficient data structure for nullifier trees that enables fast non-membership proofs and batch insertions in Aztec.
+- [Note Discovery](/developers/docs/foundational-topics/advanced/storage/note_discovery.md): Understand how Aztec's note tagging system allows users to efficiently discover and decrypt notes that belong to them without relying on brute force or offchain communication.
+- [Storage Slots](/developers/docs/foundational-topics/advanced/storage/storage_slots.md): Understand how storage slots work in Aztec for both public and private state, including siloing mechanisms and note hash commitments.
+- [Call Types](/developers/docs/foundational-topics/call_types.md): Understand the different types of contract calls in Aztec, including private and public execution modes, and how they compare to Ethereum's call types.
+- [Contract Deployment](/developers/docs/foundational-topics/contract_creation.md): Learn how contract classes and instances are created and deployed on the Aztec network.
+- [L1-L2 Communication (Portals)](/developers/docs/foundational-topics/ethereum-aztec-messaging.md): A conceptual introduction to Portals and how Aztec communicates with L1 (Ethereum)
+- [Data Structures](/developers/docs/foundational-topics/ethereum-aztec-messaging/data_structures.md): Learn about the data structures used in Aztec portals for L1-L2 communication.
+- [Inbox](/developers/docs/foundational-topics/ethereum-aztec-messaging/inbox.md): Learn about the inbox mechanism in Aztec portals for receiving messages from L1.
+- [Outbox](/developers/docs/foundational-topics/ethereum-aztec-messaging/outbox.md): Learn about the outbox mechanism in Aztec portals for sending messages to L1.
+- [Registry](/developers/docs/foundational-topics/ethereum-aztec-messaging/registry.md): Learn about the portal registry and how it manages L1-L2 contract mappings.
+- [Fees](/developers/docs/foundational-topics/fees.md): Understand Aztec's fee system including mana-based transaction pricing, Aztec token and Fee Juice payments, and how L1 and L2 costs are transparently calculated for users.
+- [Private Execution Environment (PXE)](/developers/docs/foundational-topics/pxe.md): Explore the PXE, a client-side library that handles private function execution, proof generation, secret management, and transaction orchestration in Aztec.
+- [Execution hooks](/developers/docs/foundational-topics/pxe/execution_hooks.md): How wallets use PXE execution hooks to apply custom policies during client-side simulation.
+- [Kernelless simulations](/developers/docs/foundational-topics/pxe/kernelless_simulations.md): How the PXE simulates transactions without running the private kernel circuits, why it is the default for .simulate(), and what it skips.
+- [State Management](/developers/docs/foundational-topics/state_management.md): How public and private state work in Aztec, including storage slots, notes, and the UTXO model
+- [Transactions](/developers/docs/foundational-topics/transactions.md): Comprehensive guide to the Aztec transaction lifecycle, covering private execution, PXE interactions, kernel circuits, and the step-by-step process from user request to L1 settlement.
+- [Wallets](/developers/docs/foundational-topics/wallets.md): Overview of wallet responsibilities in Aztec including account management, private state tracking, transaction execution, key management, and authorization handling.
+- [Community Calls](/developers/docs/resources/community_calls.md): Join live calls to connect with the Aztec team and other builders.
+- [Limitations](/developers/docs/resources/considerations/limitations.md): Understand the current limitations of the Aztec network and its implications for developers.
+- [Privacy Considerations](/developers/docs/resources/considerations/privacy_considerations.md): Learn about key privacy considerations when building applications on Aztec.
+- [Glossary](/developers/docs/resources/glossary.md): Comprehensive glossary of terms used throughout the Aztec documentation and protocol.
+- [Migration notes](/developers/docs/resources/migration_notes.md): Read about migration notes from previous versions, which could solve problems while updating
+- [Video lessons](/developers/docs/resources/video_lessons.md): Learn Aztec through short video explainers covering what Aztec is, private and public state, private composability, and getting started.
+- [Counter contract](/developers/docs/tutorials/contract_tutorials/counter_contract.md): Code-along tutorial for creating a simple counter contract on Aztec.
+- [Verify Noir Proofs in Aztec Contracts](/developers/docs/tutorials/contract_tutorials/recursive_verification.md): Learn to generate offchain ZK proofs with Noir and verify them onchain in Aztec private smart contracts
+- [Private Token Contract](/developers/docs/tutorials/contract_tutorials/token_contract.md): Build a privacy-preserving token for employee mental health benefits that keeps spending habits confidential.
+- [Deposit to Aave from Aztec](/developers/docs/tutorials/js_tutorials/aave_bridge.md): Build a cross-chain DeFi integration that deposits tokens into Aave from Aztec L2 and claims yield back.
+- [Deploying a Token Contract](/developers/docs/tutorials/js_tutorials/aztecjs-getting-started.md): A tutorial going through how to deploy a token contract to the local network using typescript.
+- [Bridge Your NFT to Aztec](/developers/docs/tutorials/js_tutorials/token_bridge.md): Build a private NFT bridge between Ethereum and Aztec using custom notes, PrivateSet, and cross-chain messaging portals.
+- [Cross-Chain Token Swap (L1 <> L2)](/developers/docs/tutorials/js_tutorials/uniswap_swap.md): Build a cross-chain token swap that exits L2, swaps on L1, and deposits the output back to L2 using Aztec's messaging protocol.
+- [Building a Wallet Extension for Aztec](/developers/docs/tutorials/js_tutorials/wallet-extension.md): Learn how to build a Chrome extension wallet for Aztec with encrypted key storage, SponsoredFPC fee payment, and transaction approval flows
+- [Account Management](/developers/docs/tutorials/js_tutorials/wallet-extension/accounts.md): Key derivation, encrypted storage, and SchnorrAccountContract for Aztec wallet accounts
+- [Approval UI](/developers/docs/tutorials/js_tutorials/wallet-extension/approval-ui.md): Building React popups for connection and transaction approval in Aztec wallet extensions
+- [Extension Architecture](/developers/docs/tutorials/js_tutorials/wallet-extension/architecture.md): Understanding Chrome extension architecture for Aztec wallets - service workers, offscreen documents, and message passing
+- [PXE Integration](/developers/docs/tutorials/js_tutorials/wallet-extension/pxe-integration.md): Running the Private eXecution Environment in a browser extension and extending BaseWallet
+- [Testing the Wallet Extension](/developers/docs/tutorials/js_tutorials/wallet-extension/testing.md): Loading the wallet extension in Chrome and testing with the Pod Racing dApp
+- [Transaction Handling](/developers/docs/tutorials/js_tutorials/wallet-extension/transactions.md): The sendTx flow, proof generation, and SponsoredFPC fee payment in Aztec wallet extensions
+- [Wallet Protocol](/developers/docs/tutorials/js_tutorials/wallet-extension/wallet-protocol.md): Implementing the Aztec wallet SDK protocol - discovery, ECDH key exchange, and secure messaging
+- [Building a Webapp on Aztec](/developers/docs/tutorials/js_tutorials/webapp.md): Build a Pod Racing game webapp with Vite, React, and Aztec — featuring private state, wallet connections, and zero-knowledge proofs.
+- [Contract Interaction & Gameplay](/developers/docs/tutorials/js_tutorials/webapp/contract-interaction.md): Deploy and call the Pod Racing contract from the webapp, handle game lobby and private gameplay
+- [Network & Wallet](/developers/docs/tutorials/js_tutorials/webapp/network-and-wallet.md): Connect to Aztec using an embedded wallet for local dev or the wallet SDK for browser extensions
+- [Project Setup](/developers/docs/tutorials/js_tutorials/webapp/project-setup.md): Understand the webapp project structure, Vite configuration, and environment setup
+- [Putting It Together](/developers/docs/tutorials/js_tutorials/webapp/putting-it-together.md): Wire all components into a complete Pod Racing webapp and run it
+- [The Contract](/developers/docs/tutorials/js_tutorials/webapp/the-contract.md): Walk through the Pod Racing smart contract, compile it, and deploy and interact with it via a TypeScript script
+- [Transactions & Fees](/developers/docs/tutorials/js_tutorials/webapp/transactions-and-fees.md): Learn about the Aztec transaction lifecycle and fee payment with SponsoredFPC
+- [Wallet SDK](/developers/docs/tutorials/js_tutorials/webapp/wallet-sdk.md): Aztec wallet SDK — secure wallet discovery, encrypted messaging, and capability-based permissions for dApps and wallet extensions
+- [dApp Integration](/developers/docs/tutorials/js_tutorials/webapp/wallet-sdk/dapp-integration.md): Connect your dApp to Aztec wallet extensions — discovery, secure channels, capabilities, and wallet usage
+- [Wallet Extension Integration](/developers/docs/tutorials/js_tutorials/webapp/wallet-sdk/wallet-integration.md): Build an Aztec wallet extension — handle discovery, manage sessions, route messages, and extend BaseWallet
+- [Testing Governance Rollup Upgrade on Local Network](/developers/docs/tutorials/testing_governance_rollup_upgrade.md): Deploy a new rollup and execute a governance upgrade on a local Aztec network for testing.
+- [Getting Started on Local Network](/developers/getting_started_on_local_network.md): Guide for developers to get started with the Aztec local network, including account creation and contract deployment.
+- [Getting Started on Testnet](/developers/getting_started_on_testnet.md): Deploy contracts and send transactions on the Aztec testnet using the CLI wallet and the Sponsored FPC for fee payment.
+- [Aztec Overview](/developers/overview.md): Overview of Aztec, a privacy-first Layer 2 on Ethereum supporting smart contracts with private and public state and execution.
+- [Support](/developers/support.md): Where to ask questions, report bugs, request features, and disclose security issues for the Aztec stack.
+
+## operate
+
+- [Run a Node](/operate/operators.md): Pick what you want to run on Aztec (full node, solo sequencer, staking provider, or prover). Each role has its own setup path.
+- [Claiming rewards](/operate/operators/concepts/claiming-rewards.md): When rewards show up, how much you earn, and how to claim across many sequencers and rollups from the staking dashboard.
+- [Hardware spec](/operate/operators/concepts/hardware.md): What your machine actually needs to run an Aztec full node, sequencer, provider, or prover, including the CPU instruction-set floor and the extra disk for co-hosting an L1 node.
+- [Identity model](/operate/operators/concepts/identity-model.md): Which keys earn rewards, which are slashable, which can be rotated. The role each address plays in operating an Aztec sequencer or prover.
+- [L1 RPC requirements](/operate/operators/concepts/l1-rpc.md): What kind of Ethereum L1 endpoint an Aztec node needs, why a blob-serving consensus client is required, how much RPC load a node generates, and how to avoid the most common L1-side failures.
+- [Monitoring and metrics](/operate/operators/concepts/monitoring.md): The handful of metrics that actually matter for keeping your sequencer alive, plus what to alert on and where the dashboards live.
+- [Sequencer troubleshooting](/operate/operators/concepts/sequencer-troubleshooting.md): A symptom-first guide to diagnosing a sequencer that is running but not proposing or attesting, covering publisher balance, L1 RPC, peer count, and coinbase configuration.
+- [Slashing](/operate/operators/concepts/slashing.md): What gets you slashed, how much you lose, the ejection thresholds, zombie status, the veto council, and how to recover after being slashed or ejected.
+- [Full node overview](/operate/operators/full-node/overview.md): What a full node is and why you might run one.
+- [Full node setup](/operate/operators/full-node/setup.md): How to run a full node on the Aztec network using Docker Compose.
+- [Full node troubleshooting](/operate/operators/full-node/troubleshooting.md): Common issues operators hit when running a full node, and how to fix them.
+- [Verifying your full node](/operate/operators/full-node/verification.md): Checks to confirm your full node is healthy and reachable on the network.
+- [Advanced Keystore Usage](/operate/operators/keystore.md): Learn how to configure keystores with remote signers, mnemonics, JSON V3 keystores, and multiple publishers for enhanced security and flexibility.
+- [Sample configuration patterns](/operate/operators/keystore/advanced-patterns.md): Learn about advanced keystore patterns including multiple publishers, multiple sequencers, and infrastructure provider scenarios.
+- [Creating Sequencer Keystores](/operate/operators/keystore/creating_keystores.md): Learn how to create sequencer keystores for running validators on the Aztec network using the Aztec CLI.
+- [Key storage methods](/operate/operators/keystore/storage-methods.md): Learn about different methods for storing and accessing private keys in Aztec keystores, including inline keys, remote signers, JSON V3 keystores, and mnemonics.
+- [Troubleshooting and Best Practices](/operate/operators/keystore/troubleshooting.md): Common issues, troubleshooting steps, security best practices, and CLI reference for keystore configuration and operation on the Aztec network.
+- [Monitoring and Observability](/operate/operators/monitoring.md): Learn how to monitor your Aztec node with metrics, OpenTelemetry, Prometheus, and Grafana.
+- [Grafana Setup](/operate/operators/monitoring/grafana-setup.md): Configure Grafana to visualize Aztec node metrics and set up alerts for monitoring your node's health.
+- [Key Metrics Reference](/operate/operators/monitoring/metrics-reference.md): Comprehensive guide to understanding and using the metrics exposed by your Aztec node for monitoring and observability.
+- [OpenTelemetry Collector Setup](/operate/operators/monitoring/otel-setup.md): Configure OpenTelemetry Collector to receive metrics from your Aztec node and export them to Prometheus.
+- [Prometheus Setup](/operate/operators/monitoring/prometheus-setup.md): Configure Prometheus to scrape and store metrics from your Aztec node's OpenTelemetry Collector.
+- [Complete Example and Troubleshooting](/operate/operators/monitoring/troubleshooting.md): Complete Docker Compose example with all monitoring components and troubleshooting guide for common monitoring issues.
+- [FAQs & Common Issues](/operate/operators/operator-faq.md): Troubleshooting guide for common Aztec node operator issues including sync errors, RPC limits, and update procedures.
+- [Prerequisites](/operate/operators/prerequisites.md): Common prerequisites and requirements for running nodes on the Aztec network, including hardware, software, and network configuration.
+- [Claiming prover rewards](/operate/operators/prover/claiming-rewards.md): How a prover claims epoch rewards from the Rollup contract, which address receives them, and how to claim without exposing your prover key.
+- [Prover overview](/operate/operators/prover/overview.md): What an Aztec prover does, the broker / agent architecture, and minimum hardware requirements.
+- [Prover setup](/operate/operators/prover/setup.md): Generate keys, then deploy the prover node, broker, and agents.
+- [Prover troubleshooting](/operate/operators/prover/troubleshooting.md): Common issues prover operators hit and how to fix them.
+- [Verifying your prover](/operate/operators/prover/verification.md): Confirm the prover node, broker, and agents are running, connected, and proving epochs.
+- [Staking provider: zero to attesting](/operate/operators/provider.md): An opinionated, end-to-end walkthrough that takes a new staking provider from a blank server to registered, delegator-backed, attesting Aztec sequencers.
+- [Configure environment](/operate/operators/provider/configure-environment.md): Create the project directory and a single .env file that holds every variable your Aztec sequencer needs.
+- [Updates, alerts, rewards](/operate/operators/provider/day-2-essentials.md): Set up version upgrades, monitoring alerts, reward distribution, and queue monitoring for your live provider, plus reference commands and links.
+- [Docker Compose](/operate/operators/provider/docker-compose.md): Create the docker-compose.yml that runs the Aztec node and sequencer. HA mode runs the same attester across two nodes coordinating via shared PostgreSQL.
+- [Fund accounts](/operate/operators/provider/fund-accounts.md): Fund the publisher with ETH. Delegators provide the AZTEC stake.
+- [Generate keystore](/operate/operators/provider/generate-keystore.md): Create the publisher mnemonic and validator keystore. Action steps first, theory at the bottom.
+- [Install the Aztec toolchain](/operate/operators/provider/install-toolchain.md): Install the aztec CLI and Foundry, the two tools you need to generate keys and interact with Aztec L1 contracts.
+- [Pre-flight](/operate/operators/provider/pre-flight.md): Hardware, software, network access, and tokens you need before starting. Adapts to your topology choice.
+- [Provider operations](/operate/operators/provider/provider-operations.md): Ongoing operations for staking providers: Split-contract handling, provider config updates, queue management, and recovery from common failure modes.
+- [Register as staking provider](/operate/operators/provider/register-sequencer.md): Register your provider entry on the Staking Registry and queue sequencer keystores for delegators.
+- [Start the node](/operate/operators/provider/start-node.md): Launch the Aztec sequencer container, watch it sync to the proven tip, and confirm the HTTP API is responding.
+- [Verify everything works](/operate/operators/provider/verify.md): Confirm your sequencer is healthy and visible on the network: one container check, one explorer check, one port check.
+- [Changelog](/operate/operators/reference/changelog.md): Comprehensive changelog documenting configuration changes, new features, and breaking changes across Aztec node versions.
+- [v2.0.2 (from v1.2.1)](/operate/operators/reference/changelog/v2.0.2.md): Major release with configuration simplification, keystore integration, and enhanced features. Includes breaking changes requiring migration.
+- [v4.x (Upgrade from Ignition)](/operate/operators/reference/changelog/v4.md): Breaking changes and migration guide for upgrading from Ignition (v2.x) to Alpha (v4.x).
+- [v4.2.0](/operate/operators/reference/changelog/v4.2.md): New features and configuration options for node operators.
+- [v4.3](/operate/operators/reference/changelog/v4.3.md): Operator-facing changes for the v4.3.x releases.
+- [Cli Reference](/operate/operators/reference/cli-reference.md): A reference of the --help output when running aztec start.
+- [Ethereum RPC call reference](/operate/operators/reference/ethereum_rpc_reference.md): A comprehensive reference of Ethereum RPC calls used by different Aztec node components, including archiver, sequencer, prover, and slasher nodes.
+- [Glossary](/operate/operators/reference/glossary.md): A comprehensive glossary of terms used throughout the Aztec network documentation, covering node operations, consensus, cryptography, and infrastructure concepts.
+- [Node JSON RPC API reference](/operate/operators/reference/node_api_reference.md): Complete reference for the Aztec Node JSON RPC API, including block queries, transaction submission, world state access, and administrative operations.
+- [Reading your logs](/operate/operators/reference/reading_logs.md): A reference for common sequencer, prover, and node log messages, which are safe to ignore, and which need action.
+- [Sequencer Management](/operate/operators/sequencer-management.md): Learn how to manage your sequencer operations including governance participation, delegated stake, and contract queries.
+- [Claiming Rewards](/operate/operators/sequencer-management/claiming-rewards.md): Learn how to claim your sequencer rewards from the Aztec Rollup contract using cast commands.
+- [Governance and Proposal Process](/operate/operators/sequencer-management/creating_and_voting_on_proposals.md): Learn how to participate in protocol governance as a sequencer, including signaling support, creating proposals, and voting
+- [Slashing and Offenses](/operate/operators/sequencer-management/slashing_and_offenses.md): Learn how the slashing mechanism works, what offenses are detected, and how to configure your sequencer to participate in consensus-based slashing
+- [Useful Commands](/operate/operators/sequencer-management/useful-commands.md): Essential cast commands for querying Registry, Rollup, and Governance contracts as a sequencer operator.
+- [Become a Staking Provider](/operate/operators/setup/become_a_staking_provider.md): Learn how to run a sequencer with delegated stake on the Aztec network, including provider registration and sequencer identity management.
+- [Blob retrieval](/operate/operators/setup/blob_storage.md): Learn how Aztec nodes retrieve blob data for L1 transactions.
+- [Blob upload](/operate/operators/setup/blob_upload.md): Learn how to host a blob file store to contribute to the Aztec network.
+- [Using and running a bootnode](/operate/operators/setup/bootnode_operation.md): Learn how to connect to and operate bootnodes for peer discovery in the Aztec network.
+- [Building Node Software from Source](/operate/operators/setup/building_from_source.md): Build the Aztec node Docker image from source code for development, testing, or running a specific version.
+- [High Availability Sequencers](/operate/operators/setup/high_availability_sequencers.md): Learn how to run highly available sequencers across multiple nodes with database-backed coordination to prevent double-signing and ensure redundancy.
+- [Registering a Sequencer](/operate/operators/setup/registering_sequencer.md): Learn how to register your sequencer on the Aztec network using the staking dashboard for self-staking.
+- [Running a Full Node](/operate/operators/setup/running_a_node.md): A comprehensive guide on how to run a full node on the Aztec network using Docker Compose.
+- [Running a Prover](/operate/operators/setup/running_a_prover.md): A comprehensive guide on how to run an Aztec prover on the network using Docker Compose in a distributed configuration.
+- [Running a Sequencer](/operate/operators/setup/sequencer_management.md): Learn how to manage your sequencer on the Aztec network, including registration, keystore configuration, stake management, and status monitoring.
+- [Using and uploading snapshots](/operate/operators/setup/syncing_best_practices.md): Learn sync modes and snapshot strategies to efficiently sync your Aztec node with the network.
+- [Solo sequencer: zero to attesting](/operate/operators/solo-sequencer.md): An opinionated, end-to-end walkthrough that takes a new operator from a blank server to a registered, self-staked, attesting Aztec sequencer in roughly 45 minutes.
+- [Configure environment](/operate/operators/solo-sequencer/configure-environment.md): Create the project directory and a single .env file that holds every variable your Aztec sequencer needs.
+- [DappNode setup](/operate/operators/solo-sequencer/dappnode.md): Run your solo sequencer on a DappNode box: the Aztec package replaces the configure, compose, and start steps of the manual guide.
+- [Updates, alerts, rewards](/operate/operators/solo-sequencer/day-2-essentials.md): Set up version upgrades, monitoring alerts, and reward claiming for your live sequencer, plus the reference commands and links for daily operation.
+- [Docker Compose](/operate/operators/solo-sequencer/docker-compose.md): Create the docker-compose.yml that runs the Aztec node and sequencer. HA mode runs the same attester across two nodes coordinating via shared PostgreSQL.
+- [Fund accounts](/operate/operators/solo-sequencer/fund-accounts.md): Fund the publisher with ETH and confirm your AZTEC self-stake is available.
+- [Generate keystore](/operate/operators/solo-sequencer/generate-keystore.md): Create the publisher mnemonic and validator keystore. Action steps first, theory at the bottom.
+- [Install the Aztec toolchain](/operate/operators/solo-sequencer/install-toolchain.md): Install the aztec CLI and Foundry, the two tools you need to generate keys and interact with Aztec L1 contracts.
+- [Pre-flight](/operate/operators/solo-sequencer/pre-flight.md): Hardware, software, network access, and tokens you need before starting. Adapts to your topology choice.
+- [Register as sequencer](/operate/operators/solo-sequencer/register-sequencer.md): Self-stake your AZTEC through the staking dashboard and enter the validator queue.
+- [Start the node](/operate/operators/solo-sequencer/start-node.md): Launch the Aztec sequencer container, watch it sync to the proven tip, and confirm the HTTP API is responding.
+- [Verify everything works](/operate/operators/solo-sequencer/verify.md): Confirm your sequencer is healthy and visible on the network: one container check, one explorer check, one port check.
+- [Operator tooling](/operate/operators/tooling.md): A curated index of Foundation and community-built tools that operators rely on for monitoring, key management, slashing protection, and reward tracking.
+- [v4.x (Upgrade from Ignition)](/operate/reference/changelog/v4.md): Breaking changes and migration guide for upgrading from Ignition (v2.x) to Alpha (v4.x).
+
+## participate
+
+- [Participate in the Aztec Network](/participate.md): Participate in the Aztec network - learn how it works, its token economics, and governance.
+- [Alpha Network](/participate/alpha.md): Understand the Aztec Alpha network: its purpose, known limitations, expected issues, and what to expect as the protocol matures.
+- [Basics of Aztec](/participate/basics.md): Learn the fundamentals of how the Aztec network works - addresses, wallets, fees, transactions, blocks, and bridging.
+- [Addresses on Aztec](/participate/basics/addresses.md): Learn how addresses work on Aztec - from smart contract accounts to deterministic address derivation.
+- [Blocks and Epochs](/participate/basics/blocks.md): Learn how blocks are produced on Aztec, the role of sequencers and provers, and how epochs organize proving work.
+- [Bridging Between Ethereum and Aztec](/participate/basics/bridging.md): Understand how assets move between Ethereum (L1) and Aztec (L2) through portals and message passing.
+- [Fees on Aztec](/participate/basics/fees.md): Understand how transaction fees work on Aztec, including mana and the fee token.
+- [Transactions on Aztec](/participate/basics/transactions.md): Learn about the Aztec transaction lifecycle, from creation to settlement, including client-side proving.
+- [Wallets on Aztec](/participate/basics/wallets.md): Explore Aztec wallets, their unique responsibilities, and hardware wallet support.
+- [Governance](/participate/governance.md): Learn how the Aztec network is governed through onchain voting, sequencer signaling, and stake-based voting power.
+- [L1 Contracts](/participate/governance/contracts.md): Overview of the L1 smart contracts that power Aztec network governance.
+- [Governance Staking Escrow (GSE)](/participate/governance/gse.md): Learn how the Governance Staking Escrow (GSE) enables seamless stake migration during rollup upgrades.
+- [Proposal Lifecycle](/participate/governance/proposal-lifecycle.md): Learn how proposals move through the governance process, from initial signaling to final execution.
+- [Network Upgrades](/participate/governance/upgrades.md): Learn how the Aztec network upgrades to new rollup versions and how validators transition.
+- [Voting](/participate/governance/voting.md): Learn how voting power works in Aztec governance, including deposits, withdrawals, delegation, and vote casting.
+- [$AZTEC Token Overview](/participate/token.md): Learn about the $AZTEC token - its utility, economics, and how to participate in the network.
+- [Delegating Stake](/participate/token/delegation.md): Learn how to delegate your stake to operators on the Aztec network without running infrastructure.
+- [Economics & Rewards](/participate/token/economics.md): Learn about Aztec network economics including reward distribution, sequencer and prover incentives, and the activity score system.
+- [Staking Tokens](/participate/token/staking.md): Learn how to stake tokens on the Aztec network to participate in network security and earn rewards.
+- [Voting on Proposals](/participate/token/voting.md): Learn how to vote on governance proposals on the Aztec network using your staked tokens.
+
+## aztec_connect_sunset
+
+- [Aztec Connect Sunset](/aztec_connect_sunset.md): Important information about the Aztec Connect deprecation, including withdrawal instructions and guidance for running your own instance of the rollup infrastructure.
+
+## networks
+
+- [Aztec networks overview](/networks.md): Connect to Aztec Networks: Alpha (Mainnet) and Testnet, choose the right network for your use case, and find the version each network is running.
+
+
+## API Reference
+
+Use these when writing or debugging Aztec contracts (Aztec.nr) or TypeScript apps; the guides above are better for concepts and how-tos. Each link is a complete, scoped API index.
+
+- [Aztec.nr API Reference](https://docs.aztec.network/aztec-nr-api/mainnet/llms.txt): Auto-generated API documentation for Aztec.nr (v5.0.1)
+- [TypeScript API Reference](https://docs.aztec.network/typescript-api/mainnet/llms.txt): Auto-generated TypeScript API documentation for Aztec packages (v5.0.1)
+
+
+## Optional
+
+- [awesome-aztec](https://github.com/AztecProtocol/awesome-aztec): Curated index of high-quality community resources, tools, libraries, and example projects for building on Aztec.
