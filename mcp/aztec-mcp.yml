@@ -2,16 +2,14 @@ generated: '2026-07-18'
 method: searched
 status: published
 source: https://docs.aztec.network/developers/ai_tooling
-notes: >-
-  Aztec publishes an official MCP server, @aztec/mcp-server, run locally over stdio
-  via npx. It clones the Aztec reference repositories locally and gives an AI coding
-  tool code search, documentation search, and example discovery across the Aztec
-  ecosystem, with support for switching between network versions (mainnet/testnet).
-  Works with any MCP client (Claude Code, Cursor, Windsurf, Codex).
+notes: Aztec publishes an official MCP server, @aztec/mcp-server, run locally over stdio via npx. It clones
+  the Aztec reference repositories locally and gives an AI coding tool code search, documentation search,
+  and example discovery across the Aztec ecosystem, with support for switching between network versions
+  (mainnet/testnet). Works with any MCP client (Claude Code, Cursor, Windsurf, Codex).
 server:
   name: aztec
   transport: stdio
-  package: "@aztec/mcp-server"
+  package: '@aztec/mcp-server'
   version: 1.21.2
   bin: aztec-mcp
   repository: https://github.com/AztecProtocol/mcp-server
@@ -19,7 +17,9 @@ server:
     claude_code: claude mcp add aztec -- npx @aztec/mcp-server@latest
     config:
       command: npx
-      args: ["-y", "@aztec/mcp-server@latest"]
+      args:
+      - -y
+      - '@aztec/mcp-server@latest'
 capabilities:
 - code search across the Aztec repositories
 - documentation search
@@ -34,3 +34,8 @@ related:
   url: https://context7.com/aztecprotocol/aztec-packages
   official: false
   description: Generic MCP server with Aztec docs (may be less current than the official server).
+deployment:
+  mode: local-stdio
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
