@@ -43,6 +43,10 @@ specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 image: https://cdn.prod.website-files.com/6847005bc403085c1aa846e0/689cacb514469cdab7b6c2cf_Aztec-cover.png
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-19
+x-docs-hosting: netlify
 tags:
 - Company
 - Blockchain
