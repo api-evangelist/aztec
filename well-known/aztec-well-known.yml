@@ -2,23 +2,10 @@ generated: '2026-07-18'
 method: searched
 source: live probes of aztec.network and docs.aztec.network
 host: https://aztec.network
-notes: >-
-  No /.well-known/ discovery documents are published on the apex or docs hosts. Aztec
-  is a decentralized protocol (not a hosted REST API), so it exposes no OIDC/OAuth
-  discovery or API-catalog surface. Absence recorded as valid data. Note that Aztec DOES
-  publish an llms.txt on the docs host (see llms/) which serves an equivalent
-  agent-discovery role.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
+notes: No /.well-known/ discovery documents are published on the apex or docs hosts. Aztec is a decentralized
+  protocol (not a hosted REST API), so it exposes no OIDC/OAuth discovery or API-catalog surface. Absence
+  recorded as valid data. Note that Aztec DOES publish an llms.txt on the docs host (see llms/) which
+  serves an equivalent agent-discovery role.
 docs_host_documents:
 - host: https://docs.aztec.network
   path: /.well-known/security.txt
@@ -27,3 +14,21 @@ docs_host_documents:
   path: /llms.txt
   status: 200
   file: ../llms/aztec-llms.txt
+hosts:
+- host: https://aztec.network
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
